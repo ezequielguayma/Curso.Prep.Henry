@@ -5,13 +5,12 @@ function obtenerMayor(x, y) {
   // Devuelve el número más grande
   // Si son iguales, devuelve cualquiera de los dos
   // Tu código:
-  if(x > y) {
+  if(x >= y) {
     return x;
-    {
+  }
     return y;
     }
-  }
-}
+  
 
 function mayoriaDeEdad(edad) {
   //Determinar si la persona según su edad puede ingresar a un evento.
@@ -24,7 +23,7 @@ function mayoriaDeEdad(edad) {
   return "Not allowed";
 }
 }
-  
+
 function conection(status) {
   //Recibimos un estado de conexión de un usuario representado por un valor numérico. 
   //Cuando el estado es igual a 1, el usuario está "Online"
@@ -49,17 +48,17 @@ function saludo(idioma) {
   // Si "idioma" es "ingles", devuelve "Hello!"
   // Si "idioma" no es ninguno de los anteiores o es `undefined` devuelve "Hola!"
   // Tu código:
-if(idioma === "aleman") {
-    return 'Guten Tag!';
+if(idioma === "ingles") {
+    return "Hello!";
   }
 else if(idioma === "mandarin") {
-      return 'Ni Hao';
+      return "Ni Hao!";
     }
-else if(idioma === "ingles") {
-  return 'Hello';
+if(idioma === "aleman") {
+  return "Guten Tag!";
 }
 else {
-  return "hola";
+  return "Hola!";
 }
 }
   
@@ -72,17 +71,16 @@ function colors(color) {
   //Caso default: devuelve --> "Color not found"
   //Usar el statement Switch.
   switch(color) {
-    case 'blue':
-      return 'This is blue';
-    case 'red':
-      return 'This is red';
-    case 'green':
-      return 'This is green';
-    case 'orange':
-      return 'This is orange'
-    case 'default':
-      return 'Color no found'
+    case "blue":
+      return "This is blue";
+    case "red":
+      return "This is red";
+    case "green":
+      return "This is green";
+    case "orange":
+      return "This is orange";
   }
+      return "Color not found";
 }
 
 function esDiezOCinco(numero) {
@@ -116,10 +114,13 @@ function fizzBuzz(numero) {
   // Si "numero" es divisible entre 5, devuelve "buzz"
   // Si "numero" es divisible entre 3 y 5 (ambos), devuelve "fizzbuzz"
   // De lo contrario, devuelve el numero
+  if(numero % 3 === 0 && numero % 5 === 0) return "fizzbuzz";
+
+  if(numero % 5 === 0) return "buzz";
+  
   if(numero % 3 === 0) return "fizz";
-  if(numero % 5 === 0) return 'buzz';
-  if(numero % 15 === 0) return 'fizzbuzz';
- return 'numero'
+
+  return "numero";
 }
 
 function operadoresLogicos(num1, num2, num3) {
@@ -187,13 +188,17 @@ return arrayTablaDel6
 function tieneTresDigitos(numero){
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí
-  
+  if (numero > 100 & numero > 1000){
+    return true
+  }
+  return false
 }
 
 function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
+  
 }
 
 
